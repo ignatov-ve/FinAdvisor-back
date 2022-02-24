@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -80,8 +80,8 @@ DATABASES = {
         'NAME': 'cs_finadviser',
         'USER': 'finadviser',
         'PASSWORD': 'BLgArTRCTu9DU4uSWXoU',
-        'HOST': 'localhost',
-        'PORT': '5438',
+        'HOST': os.environ.get('FA_HOST', 'localhost'),
+        'PORT': os.environ.get('FA_PORT', '5432'),
         'OPTIONS': {
             'options': '-c search_path=fa'
         },
