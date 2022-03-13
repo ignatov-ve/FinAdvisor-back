@@ -6,7 +6,7 @@ from .models import Okved, Industry, Region
 class OkvedSerializer(serializers.ModelSerializer):
     class Meta:
         model = Okved
-        fields = ('okved', 'name')
+        fields = ('okved', 'name', 'industry_code')
 
 
 class IndustrySerializer(serializers.ModelSerializer):
