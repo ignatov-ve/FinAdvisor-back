@@ -8,4 +8,5 @@ urlpatterns = [
     path('api/industries/', views.get_all_industries),
     path('api/regions/', views.get_all_regions),
     path('api/prediction/', views.get_prediction),
+    path('', views.index),
 ]

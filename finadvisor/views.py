@@ -3,6 +3,7 @@ import sys
 
 import pandas as pd
 from django.http import HttpResponse, JsonResponse
+from django.shortcuts import render
 from rest_framework import generics
 import json
 from django.core import serializers
@@ -70,7 +71,7 @@ def get_prediction(request):
 
     file_ = os.path.join(settings.BASE_DIR, 'fa_model.pkl')
     fa_model = FinAdvisorModel.load(file_)
-    prediction = fa_model.predict_one(np.log(int(sum)), okved, region)
+    prediction = fa_model.predict_one(np.log(int(sum) / 1000), okved, region)
 
     pred_dict = {
         'noprofit': prediction[0][0],
@@ -83,3 +84,7 @@ def get_prediction(request):
     }
 
     return JsonResponse(pred_dict, safe=False, json_dumps_params={'ensure_ascii': False})
+
+
+def index(request):
+    return render(request, 'index.html')
