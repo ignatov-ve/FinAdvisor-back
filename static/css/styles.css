@@ -60,11 +60,11 @@ h6 {
 }
 
 @font-face {
-  font-family: "San Francisco Pro";
-  src: url("../fonts/SFProDisplay-UltralightItalic.woff.") format("woff");
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
+    font-family: "San Francisco Pro";
+    src: url("../fonts/SFProDisplay-UltralightItalic.woff.") format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
 }
 
 html,
@@ -159,19 +159,19 @@ main {
 }
 
 .main__fin-adv {
-  padding-top: 25rem;
-  background-image: linear-gradient(
-          to right,
-          rgb(255, 255, 255, 1),
-          rgb(255, 255, 255, 0)
-  ),
-  url("../img/pexels-andrea-piacquadio-845451.png");
-  /* background:  */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  padding-left: 1rem;
-  padding-bottom: 32.3rem;
+    padding-top: 25rem;
+    background-image: linear-gradient(
+            to right,
+            rgb(255, 255, 255, 1),
+            rgb(255, 255, 255, 0)
+    ),
+    url("../img/pexels-andrea-piacquadio-845451.png");
+    /* background:  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding-left: 1rem;
+    padding-bottom: 32.3rem;
 }
 
 .main__fin-adv__title {
@@ -248,18 +248,17 @@ main {
   box-shadow: inset 0px -1px 0px var(--color-hover);
   height: 5.6rem;
 }
-
 select:disabled {
   opacity: 1;
 
 }
 
 .equity {
-  display: inline-block;
-  color: var(--color-hover);
-  font-style: italic;
-  font-weight: 200;
-  font-size: 1rem;
+    display: inline-block;
+    color: var(--color-hover);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -357,7 +356,7 @@ input[type="number"] {
 }
 
 .date, .year {
-  display: inline-block;
+    display: inline-block;
 }
 
 .footer {
