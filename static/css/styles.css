@@ -60,11 +60,11 @@ h6 {
 }
 
 @font-face {
-    font-family: "San Francisco Pro";
-    src: url("../fonts/SFProDisplay-UltralightItalic.woff.") format("woff");
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
+  font-family: "San Francisco Pro";
+  src: url("../fonts/SFProDisplay-UltralightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
 }
 
 html,
