@@ -60,11 +60,11 @@ h6 {
 }
 
 @font-face {
-  font-family: "San Francisco Pro";
-  src: url("../fonts/SFProDisplay-UltralightItalic.woff") format("woff");
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
+    font-family: "San Francisco Pro";
+    src: url("../fonts/SFProDisplay-RegularItalic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 
 html,
@@ -257,8 +257,8 @@ select:disabled {
     display: inline-block;
     color: var(--color-hover);
     font-style: italic;
-    font-weight: 200;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -350,24 +350,29 @@ input[type="number"] {
 }
 
 .result__date {
-  font-weight: 800;
-  font-size: 3.7rem;
-  line-height: 4.4rem;
+    font-weight: 800;
+    font-size: 3.7rem;
+    line-height: 4.4rem;
 }
 
 .date, .year {
     display: inline-block;
 }
 
+.chart {
+    width: 60rem;
+    height: 30rem;
+}
+
 .footer {
-  background-color: var(--color-hover);
-  padding-bottom: 7.4rem;
+    background-color: var(--color-hover);
+    padding-bottom: 7.4rem;
 }
 
 .footer__wrap-footer {
-  display: flex;
-  max-width: 100rem;
-  margin: 0 auto;
+    display: flex;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
 .footer-title {
