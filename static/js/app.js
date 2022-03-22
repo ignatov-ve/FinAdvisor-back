@@ -1,4 +1,6 @@
 const URL = "/api";
+// const URLTest = "http://localhost:3000";
+let myChart;
 
 const main = () => {
   getRegions();
@@ -157,8 +159,11 @@ const renderChart = (chart) => {
       },
     ],
   };
+  if (typeof myChart === "object") {
+    myChart.destroy();
+  }
 
-  const myChart = new Chart(ctx, {
+  myChart = new Chart(ctx, {
     type: "bar",
     data: data,
     options: {
@@ -170,5 +175,4 @@ const renderChart = (chart) => {
     },
   });
 };
-
 main();
