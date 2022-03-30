@@ -1,5 +1,6 @@
-const URL = "/api";
-// const URLTest = "http://localhost:3000";
+const a = 1;
+const URL = a === 1 ? "/api" : "http://localhost:3000";
+
 let myChart;
 
 const main = () => {
@@ -107,7 +108,7 @@ const renderResult = (result) => {
     document.querySelector(".date").innerText = "Не окупится";
     document.querySelector(".year").innerText = "";
   } else if (profit === "year_0") {
-    document.querySelector(".date").innerText = "&lt;1";
+    document.querySelector(".date").innerText = "<1";
     document.querySelector(".year").innerText = "года";
   } else {
     document.querySelector(".date").innerText = profit.split("_")[1];
@@ -123,7 +124,7 @@ const renderResult = (result) => {
 const endingOfYear = (year) => {
   if (year % 10 === 1) {
     return "год";
-  } else if (year % 10 in [2, 3, 4] && year !== 0) {
+  } else if (year % 10 === 2 || year % 10 === 3 || year % 10 === 4) {
     return "года";
   } else {
     return "лет";
